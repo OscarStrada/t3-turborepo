@@ -1,0 +1,40 @@
+{
+  "name": "@repo/supabase",
+  "version": "1.0.0",
+  "description": "",
+  "types": "./index.ts",
+  "files": [
+    "admin.ts",
+    "client.ts",
+    "middleware.ts",
+    "server.ts",
+    "services/auth.ts"
+  ],
+  "scripts": {
+    "clean": "rm -rf .turbo node_modules",
+    "check:types": "tsc --noEmit",
+    "lint": "eslint .",
+    "env:load": "dotenv -e ../../.env --"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@supabase/ssr": "^0.1.0",
+    "@supabase/supabase-js": "^2.39.8",
+    "@repo/drizzle": "workspace:*",
+    "@repo/env": "workspace:*",
+    "dotenv-cli": "7.4.1",
+    "next": "^14.1.4",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@repo/eslint-config": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
+    "@types/eslint": "^8.56.6",
+    "@types/node": "^20.11.30",
+    "drizzle-kit": "^0.20.14",
+    "eslint": "^8.57.0",
+    "typescript": "^5.4.2"
+  }
+}

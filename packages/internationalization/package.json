@@ -1,0 +1,30 @@
+{
+  "name": "@repo/internationalization",
+  "main": "./index.ts",
+  "types": "./index.ts",
+  "files": [
+    "index.ts",
+    "lib/client.ts",
+    "lib/locale-middleware.ts",
+    "lib/server.ts"
+  ],
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "next-international": "^1.2.4"
+  },
+  "devDependencies": {
+    "@repo/eslint-config": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
+    "typescript": "^5.4.3"
+  },
+  "eslintConfig": {
+    "root": true,
+    "extends": [
+      "@repo/eslint-config/lib"
+    ]
+  }
+}

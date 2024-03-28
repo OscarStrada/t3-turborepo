@@ -1,0 +1,23 @@
+{
+  "name": "saas-supabase-template",
+  "private": true,
+  "scripts": {
+    "clean:workspaces": "turbo clean",
+    "check:types": "turbo typecheck",
+    "build": "turbo run build",
+    "dev": "turbo dev",
+    "lint": "turbo lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "vercel:update:env": "vercel env add"
+  },
+  "devDependencies": {
+    "@repo/eslint-config": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
+    "prettier": "^3.2.5",
+    "turbo": "latest"
+  },
+  "packageManager": "pnpm@8.9.0",
+  "engines": {
+    "node": ">=18"
+  }
+}
